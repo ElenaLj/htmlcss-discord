@@ -79,6 +79,12 @@ nav ul li {
     width: 100%;
 }
 
+#jumbotron img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 /* *** debug *** */
 /* .debug #logo,
 .debug #login {
@@ -93,10 +99,10 @@ nav ul li {
     border: 1px solid black;
 } */
 
-.debug #jumbotron {
+/* .debug #jumbotron {
     height: 500px;
     background-color: yellow;
-}
+} */
 
 .debug main {
     height: 800px;
