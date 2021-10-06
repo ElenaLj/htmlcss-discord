@@ -8,3 +8,38 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* *** header *** */
+header {
+    height: 100px;
+}
+
+/* *** jumbo *** */
+#jumbotron {
+    width: 100%;
+}
+
+/* *** debug *** */
+.debug header {
+    background-color: cornflowerblue;
+}
+
+.debug #jumbotron {
+    height: 500px;
+    background-color: yellow;
+}
+
+.debug main {
+    height: 800px;
+    background-color: darkseagreen;
+}
+
+.debug footer {
+    height: 400px;
+    background-color: forestgreen;
+}
