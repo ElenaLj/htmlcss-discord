@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
  /* *** clearfix *** */
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -35,19 +35,15 @@ header {
     vertical-align: middle;
 }
 
-.float #logo, .float #login {
-    width: 150px;
+header #logo, #login {
+    width: 20%;
 }
 
-.float nav {
-    width: 708px;
+.header nav {
+    width: 60%;
 }
 
-.float {
-    float: left;
-}
-
-.float > #logo, nav, #login {
+.clearfix .float {
     float: left;
 }
 
@@ -161,6 +157,17 @@ main .background:nth-child(even) {
 
 .container .img, .container .description {
     display: inline-block;
+}
+
+.main-img {
+    width: 50%;
+}
+
+section .txt-main {
+    width: 50%;
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: left;
 }
 
 /* *** debug *** */
