@@ -14,11 +14,15 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
- /* *** clearfix *** */
+ /* *** clearfix e float*** */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.clearfix .float-l {
+    float: left;
 }
 
 /* *** header *** */
@@ -41,10 +45,6 @@ header #logo, #login {
 
 .header nav {
     width: 60%;
-}
-
-.clearfix .float {
-    float: left;
 }
 
 nav ul .link a {
@@ -92,9 +92,11 @@ nav ul li {
 
  /* *** text format *** */
 .txt {
-    width: 700px;
     line-height: 1.6;
     font-size: 20px;
+}
+
+.txt.center {
     text-align: center;
 }
 
@@ -154,20 +156,22 @@ main .background:nth-child(odd) {
 main .background:nth-child(even) {
     background-color: rgba(246,246,246,255);
 }
-
-.container .img, .container .description {
-    display: inline-block;
+main .section {
+    height: 600px;
+    margin: 100px auto;
 }
 
-.main-img {
+main .main-img, 
+main .main-txt {
     width: 50%;
 }
 
-section .txt-main {
-    width: 50%;
-    line-height: 1.6;
-    font-size: 20px;
-    text-align: left;
+main .main-txt {
+    padding: 0 80px;
+}
+
+.background .title {
+    font-size: 40px;
 }
 
 /* *** debug *** */
@@ -197,7 +201,7 @@ section .txt-main {
     height: 200px;
 }
 
-.debug main section:nth-child(odd) {
+.debug main .background:nth-child(odd) {
     height: 200px;
 } */
 
