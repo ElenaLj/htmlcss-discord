@@ -43,7 +43,11 @@ header {
     width: 708px;
 }
 
-.float > div, nav {
+.float {
+    float: left;
+}
+
+.float > #logo, nav, #login {
     float: left;
 }
 
@@ -155,6 +159,10 @@ main .background:nth-child(even) {
     background-color: rgba(246,246,246,255);
 }
 
+.container .img, .container .description {
+    display: inline-block;
+}
+
 /* *** debug *** */
 /* .debug #logo,
 .debug #login {
@@ -186,7 +194,7 @@ main .background:nth-child(even) {
     height: 200px;
 } */
 
-.debug footer {
+/* .debug footer {
     height: 400px;
     background-color: forestgreen;
-}
+} */
