@@ -10,13 +10,68 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 /* *** header *** */
 header {
     height: 100px;
+    line-height: 100px;
+    background-color: rgba(49,97,224,255);
+}
+
+/* *** logo e nav *** */
+
+#logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.float #logo, .float #login {
+    width: 20%;
+}
+
+.float nav {
+    width: 60%;
+}
+
+.float > div, nav {
+    float: left;
+}
+
+nav ul .link a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+#login {
+    text-align: right;
+}
+
+#login a {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px 3px;
+    border-radius: 20px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+nav > ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
 }
 
 /* *** jumbo *** */
@@ -25,9 +80,18 @@ header {
 }
 
 /* *** debug *** */
-.debug header {
-    background-color: cornflowerblue;
+/* .debug #logo,
+.debug #login {
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
 }
+
+.debug nav {
+    height: 100px;
+    background-color: tomato;
+    border: 1px solid black;
+} */
 
 .debug #jumbotron {
     height: 500px;
