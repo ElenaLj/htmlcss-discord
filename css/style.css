@@ -77,13 +77,36 @@ nav ul li {
 /* *** jumbo *** */
 #jumbotron {
     width: 100%;
-}
-
-#jumbotron img {
-    width: 100%;
+    height: 600px;
+    background-image: url("../img/jumbo.png");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+.txt {
+    width: 700px;
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: center;
+}
+
+div .txt.center h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+
+#jumbotron .txt.center {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* *** debug *** */
 /* .debug #logo,
