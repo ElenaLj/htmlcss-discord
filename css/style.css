@@ -158,7 +158,8 @@ main .background:nth-child(even) {
 }
 main .section {
     height: 600px;
-    margin: 100px auto;
+    margin-top: 100px;
+    padding: 80px;
 }
 
 main .main-img, 
